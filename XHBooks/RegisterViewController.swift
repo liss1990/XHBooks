@@ -57,6 +57,11 @@ class RegisterViewController: UIViewController,UITextFieldDelegate {
     }
     */
 
+    @IBAction func touch(sender: AnyObject) {
+        self.view.endEditing(true)
+        
+        
+    }
     @IBAction func register(sender: AnyObject) {
         ProgressHUD.show("注册中请稍后....")
         let user = AVUser()
